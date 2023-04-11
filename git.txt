@@ -1,0 +1,56 @@
+git:
+----
+yum install git -y
+git init .
+
+GIT LOCAL:::
+_________
+Steps to commit a file:
+-----------------------
+create a file : touch filename
+for git status : git status
+now add that file : git add .
+commit the file wit msg: git commit -m "commit msg you want" filename
+To see details of the file: git log
+
+Configuration of user:
+----------------------
+git config user.name "username"
+git config user.email "useremail@gmail.com"
+
+cat>filename  cntl+d
+
+git add all : git add .
+git remove all : git rm -r --cached .
+
+let f1,f2,f3 files
+to add track in git : git add f*
+to commit git : git commit -m "files commited message" f*
+to remove track git : git rm -r --cached f*
+
+to ignore git track and commit: put files in .gitignore:  vi .gitignore
+
+
+
+
+GIT BRANCHES:
+_____________
+to check the current default-branch: git branch :MASTER
+To create branch : git branch branchname
+To check out to otherbranch : git checkout otherbanchname
+to create and checkout branch: git checkout -b branchname
+to rename branch ; git branch oldbranch newbranch
+to delete branch: git branch -d branchname
+to forcefully delete branch: git branch -d branchname
+
+
+
+GIT CENTRAL:
+____________
+to connect local to central : git remote add origin UrlOfGitRepo
+to push the added and commited files to github website from local git: git push origin branchname
+to merge current branch with other branch: git merge otherbranchname
+to download the repo github(website) to git(local desktop): git clone urlofrepo
+to download the files in branch from github website to git desktop: git pull origin branchname
+ 
+https://youtu.be/N1fYTi-edNk?t=6294
